@@ -6,6 +6,9 @@ frontend:
         - npm ci
     build:
       commands:
+        - head -c 512000 </dev/urandom >public/file-500.bin
+        - head -c 5242880 </dev/urandom >public/file-5000.bin
+        - head -c 52428800 </dev/urandom >public/file-50000.bin
         - npm run build
   artifacts:
     baseDirectory: build

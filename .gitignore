@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Generated random files
+public/file-500.bin
+public/file-5000.bin
+public/file-50000.bin
