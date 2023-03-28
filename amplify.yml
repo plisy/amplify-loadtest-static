@@ -9,6 +9,7 @@ frontend:
         - head -c 512000 </dev/urandom >public/file-500.txt
         - head -c 5242880 </dev/urandom >public/file-5000.txt
         - head -c 52428800 </dev/urandom >public/file-50000.txt
+        - head -c 1048576000 </dev/urandom >public/file-1000000.txt
         - npm run build
   artifacts:
     baseDirectory: build
